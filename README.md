@@ -142,8 +142,3 @@ This project demonstrates:
 * Frontend and backend integration
 * Event-driven architecture
 
-## Author
-
-Hasnaa AbdelRahman
-
-Final Year Computer Science Student and .NET Developer
