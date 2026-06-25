@@ -1,7 +1,7 @@
 package com.demo.chat.controller;
 
 
-import com.demo.chat.models.Message;
+import com.demo.chat.models.ChatMessage;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
@@ -13,13 +13,13 @@ public class ChatController {
 
     @MessageMapping("/chat.send")
     @SendTo("/topic/public")
-    public Message send(@Payload Message message){
+    public ChatMessage send(@Payload ChatMessage message){
         return message;
     }
 
     @MessageMapping("/chat.addUser")
     @SendTo("/topic/public")
-    public Message addUser(@Payload Message message , SimpMessageHeaderAccessor headerAccessor) {
+    public ChatMessage addUser(@Payload ChatMessage message , SimpMessageHeaderAccessor headerAccessor) {
         headerAccessor
                 .getSessionAttributes()
                 .put("username" , message.getSender());
