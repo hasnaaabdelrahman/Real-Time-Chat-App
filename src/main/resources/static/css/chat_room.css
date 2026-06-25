@@ -73,3 +73,18 @@ button:hover {
 button:active {
     transform: scale(0.98);
 }
+
+#chat {
+    width: 600px;
+    height: 450px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

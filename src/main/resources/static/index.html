@@ -18,6 +18,7 @@
             e.preventDefault();
             const name = document.getElementById('name').value.trim();
             if(name) {
+                localStorage.setItem("username", name);
                 window.location.href='chat_room.html';
             }else {
                 alert("please enter your name to join chat room");
