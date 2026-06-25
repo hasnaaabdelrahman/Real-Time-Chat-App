@@ -5,4 +5,3 @@ chatBox = document.querySelector('#chat');
 chatForm = document.querySelector('#chat-form');
 message = document.querySelector('#message');
 senButton = document.querySelector('#send-button');
-
