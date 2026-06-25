@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<form id="join-form">
+    <label>
+        Enter Your Name
+        <input id="name" type="text" autocomplete="off" >
+    </label>
+    <button id="join-button" type="submit">Join</button>
+</form>
+    <script>
+        document.getElementById('join-form').addEventListener("submit",  function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            if(name) {
+                window.location.href='chat_room.html';
+            }else {
+                alert("please enter your name to join chat room");
+            }
+        })
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
