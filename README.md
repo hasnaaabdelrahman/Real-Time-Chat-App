@@ -131,14 +131,3 @@ http://localhost:8080
 * Typing indicators
 * Read receipts
 * Emojis and file sharing
-
-## Learning Objectives
-
-This project demonstrates:
-
-* WebSocket communication in Spring Boot
-* STOMP messaging
-* Real-time event handling
-* Frontend and backend integration
-* Event-driven architecture
-
